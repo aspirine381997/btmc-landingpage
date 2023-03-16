@@ -1,3 +1,23 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.bg-gradient-1 {
+  background: linear-gradient(
+    270deg,
+    #d5a752 -7.81%,
+    #fff5c8 19.66%,
+    #f9edab 86.83%,
+    #c59757 121.09%
+  );
+}
+
+.bg-gradient-2 {
+  background: linear-gradient(
+    270deg,
+    #d5a752 -73.94%,
+    #fff5c8 98.45%,
+    #f9edab 349.47%,
+    #c59757 492.04%
+  );
+}
