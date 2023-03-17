@@ -1,3 +1,42 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@font-face {
+  font-family: "FzPhotograph";
+  src: url("/fonts/Fz-Photograph.ttf");
+}
+
+.bg-gradient-1 {
+  background: linear-gradient(
+    270deg,
+    #d5a752 -7.81%,
+    #fff5c8 19.66%,
+    #f9edab 86.83%,
+    #c59757 121.09%
+  );
+}
+
+.bg-gradient-2 {
+  background: linear-gradient(
+    270deg,
+    #d5a752 -73.94%,
+    #fff5c8 98.45%,
+    #f9edab 349.47%,
+    #c59757 492.04%
+  );
+}
+
+.text-gradient {
+  background: linear-gradient(
+    269.93deg,
+    #d5a752 -15.64%,
+    #f9edab 31.08%,
+    #fff5c8 76.39%,
+    #c59757 120.29%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
