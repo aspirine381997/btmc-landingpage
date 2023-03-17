@@ -8,6 +8,8 @@ module.exports = {
   theme: {
     fontFamily: {
       be: ["Be Vietnam Pro", "sans-serif"],
+      inter: ["Inter", "sans-serif"],
+      fz: ["FzPhotograph", "sans-serif"],
     },
 
     screens: {
