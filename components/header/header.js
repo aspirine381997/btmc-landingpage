@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Header = () => {
@@ -6,8 +7,12 @@ const Header = () => {
       <div className="lg:container xl:py-3.5 flex flex-col-reverse lg:flex-row place-content-between items-center ">
         {/* logos */}
         <div className="py-3 xl:py-0 flex gap-6 items-center">
-          <img alt="Logo Medlatech" src="\images\header\logo.png" />
-          <img alt="Logo BTMC" src="\images\header\Logo-BTMC.png" />
+          <Link target="_blank" href="https://medlatec.vn/">
+            <img alt="Logo Medlatech" src="\images\header\logo.png" />
+          </Link>
+          <Link target="_blank" href="https://btmc.vn/">
+            <img alt="Logo BTMC" src="\images\header\Logo-BTMC.png" />
+          </Link>
         </div>
 
         {/* infor */}
@@ -29,13 +34,18 @@ const Header = () => {
               className="pointer-events-none"
             />
           </div>
-          <div className="w-11 h-11 bg-gradient-2 rounded-full hidden lg:flex items-center justify-center">
-            <img
-              alt="Logo Facebook"
-              src="\images\header\logo-fb.png"
-              className="w-3.5"
-            />
-          </div>
+          <Link
+            target="_blank"
+            href="https://www.facebook.com/BenhVienDaKhoaMedlatec/?locale=vi_VN"
+          >
+            <div className="w-11 h-11 bg-gradient-2 rounded-full hidden lg:flex items-center justify-center">
+              <img
+                alt="Logo Facebook"
+                src="\images\header\logo-fb.png"
+                className="w-3.5"
+              />
+            </div>
+          </Link>
         </div>
       </div>
     </div>
