@@ -2,10 +2,14 @@ import Head from "next/head";
 import Header from "@/components/header/header";
 import ReactPlayer from "react-player";
 import { useState, useEffect, useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, isActive } from "swiper/react";
+import { EffectCoverflow, Navigation } from "swiper";
 import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/navigation";
 import Link from "next/link";
 import Footer from "@/components/footer/footer";
+import { Fade } from "react-reveal";
 
 export default function Home() {
   const [isSSR, setIsSSR] = useState(true);
@@ -44,27 +48,33 @@ export default function Home() {
                   <span className="font-inter font-bold text-xl xl:text-4xl text-white">
                     Cùng MEDLATEC
                   </span>
-                  <span className="font-fz text-6xl xl:text-9xl text-gradient leading-[88px] xl:leading-[148px]">
-                    Bảo Tín tình yêu
-                  </span>
+                  <Fade bottom>
+                    <span className="font-fz text-6xl xl:text-9xl text-gradient leading-[88px] xl:leading-[148px]">
+                      Bảo Tín tình yêu
+                    </span>
+                  </Fade>
                 </h1>
 
-                <h2 className="flex flex-col items-center gap-2 xl:gap-4">
-                  <span className="font-be font-semibold text-[9px] xl:text-[15px] text-center text-white uppercase">
-                    Tải app My Medlatec để nhận Quà tặng trị giá
-                  </span>
-                  <span className="font-be font-bold text-4xl xl:text-[64px] text-white">
-                    6.500.000đ
-                  </span>
-                </h2>
+                <Fade bottom delay={200}>
+                  <h2 className="flex flex-col items-center gap-2 xl:gap-4">
+                    <span className="font-be font-semibold text-[9px] xl:text-[15px] text-center text-white uppercase">
+                      Tải app My Medlatec để nhận Quà tặng trị giá
+                    </span>
+                    <span className="font-be font-bold text-4xl xl:text-[64px] text-white">
+                      6.500.000đ
+                    </span>
+                  </h2>
+                </Fade>
 
-                <button className="mt-4 xl:mt-6 mx-auto bg-gradient-1 py-3.5 px-[52px] rounded-full font-be font-bold text-xl text-[#0F55C9] uppercase">
-                  Tải app ngay
-                </button>
+                <Fade bottom delay={200}>
+                  <button className="mt-4 xl:mt-6 mx-auto bg-gradient-1 py-3.5 px-[52px] rounded-full font-be font-bold text-xl text-[#0F55C9] uppercase">
+                    Tải app ngay
+                  </button>
+                </Fade>
               </div>
 
               {/* Video */}
-              <div className="xl:w-full mx-auto mt-10 rounded-t-2xl xl:rounded-[26px] overflow-hidden max-w-[952px] drop-shadow-[0_4px_25px_rgba(15,85,201,0.25)]">
+              <div className="xl:w-full mx-auto mt-10 rounded-2xl xl:rounded-[26px] overflow-hidden max-w-[952px] drop-shadow-[0_4px_25px_rgba(15,85,201,0.25)]">
                 <ReactPlayer
                   url="https://www.youtube.com/watch?v=QQNYv3NRguc&themeRefresh=1"
                   width="100%"
@@ -131,7 +141,20 @@ export default function Home() {
           <div className="container mt-8 mb-8 xl:mb-20">
             <Swiper
               className="z-0"
-              loop={true}
+              effect={"coverflow"}
+              grabCursor={true}
+              centeredSlides={true}
+              slidesPerView={1.3}
+              coverflowEffect={{
+                rotate: 30,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+              }}
+              navigation={true}
+              modules={[EffectCoverflow, Navigation]}
+              rewind={true}
               breakpoints={{
                 0: {
                   slidesPerView: 1.2,
@@ -144,14 +167,18 @@ export default function Home() {
                 992: {
                   slidesPerView: 3,
                   spaceBetween: 24,
+                  effect: "slide",
+                  centeredSlides: false,
                 },
                 1200: {
                   slidesPerView: 3,
                   spaceBetween: 98,
+                  effect: "slide",
+                  centeredSlides: false,
                 },
               }}
             >
-              <SwiperSlide className="w-3/4">
+              <SwiperSlide className="">
                 <div className="flex flex-col items-center">
                   <img
                     alt="Mua Vàng ưu đãi lớn tại Bảo Tín Minh Châu"
@@ -172,7 +199,7 @@ export default function Home() {
                 </div>
               </SwiperSlide>
 
-              <SwiperSlide className="w-3/4">
+              <SwiperSlide className="">
                 <div className="flex flex-col items-center">
                   <img
                     alt="Khám tiền hôn nhân cho khởi đầu hạnh phúc"
@@ -193,7 +220,7 @@ export default function Home() {
                 </div>
               </SwiperSlide>
 
-              <SwiperSlide className="w-3/4">
+              <SwiperSlide className="">
                 <div className="flex flex-col items-center">
                   <img
                     alt="Nghỉ dưỡng tại Hoà Bình dành riêng cho cặp đôi"

@@ -40,3 +40,17 @@
   background-clip: text;
   text-fill-color: transparent;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #ffffffcc;
+  width: 46px !important;
+  height: 46px !important;
+  border-radius: 9999px !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px !important;
+  color: black;
+}
