@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import Link from "next/link";
 import Footer from "@/components/footer/footer";
 import { Fade } from "react-awesome-reveal";
+import { useRouter } from "next/router";
 
 export default function Home({ title, description }) {
   const [isSSR, setIsSSR] = useState(true);
@@ -17,6 +18,14 @@ export default function Home({ title, description }) {
   useEffect(() => {
     setIsSSR(false);
   }, []);
+
+  const router = useRouter();
+
+  useEffect(() => {
+    router.prefetch("");
+    router.prefetch("/images");
+    router.prefetch("/fonts");
+  });
 
   return (
     !isSSR && (
