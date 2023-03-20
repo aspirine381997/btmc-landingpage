@@ -11,7 +11,7 @@ import Link from "next/link";
 import Footer from "@/components/footer/footer";
 import { Fade } from "react-awesome-reveal";
 
-export default function Home() {
+export default function Home({ title, description }) {
   const [isSSR, setIsSSR] = useState(true);
 
   useEffect(() => {
@@ -27,7 +27,6 @@ export default function Home() {
             name="description"
             content="Cùng MEDLATEC bảo tín tình yêu. Tải app Medlatec để nhận quà tặng trị giá 6.500.000đ"
           />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <main>
           {/* Header */}
@@ -131,7 +130,7 @@ export default function Home() {
                 />
               </div>
 
-              <h2 className="mt-5 xl:mt-7 font-be font-bold text-xl xl:text-[40px]">
+              <h2 className="mt-5 xl:mt-7 font-be font-bold text-xl xl:text-[40px] text-center">
                 NHẬN QUÀ TẶNG 6,5 TRIỆU
               </h2>
               <div className="mt-2.5 xl:mt-4 font-be text-[#8989A2] text-sm xl:text-base max-w-[672px] text-center">
@@ -569,4 +568,14 @@ export default function Home() {
       </>
     )
   );
+}
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      title: "Cùng MEDLATEC bảo tín tình yêu",
+      description:
+        "Cùng MEDLATEC bảo tín tình yêu. Tải app Medlatec để nhận quà tặng trị giá 6.500.000đ",
+    },
+  };
 }
