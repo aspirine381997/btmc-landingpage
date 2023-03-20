@@ -1,13 +1,19 @@
-import '@/styles/globals.css'
+import "@/styles/globals.css";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import App from "next/app";
+
+class MyApp extends App {
+  static async getInitialProps({ Component, ctx }) {
+    const pageProps = Component.getInitialProps
+      ? await Component.getInitialProps(ctx)
+      : {};
+    return { pageProps };
+  }
+
+  render() {
+    const { Component, pageProps } = this.props;
+    return <Component {...pageProps} />;
+  }
 }
 
-App.getInitialProps = async ({ Component, ctx }) => {
-  const pageProps = Component.getInitialProps
-    ? await Component.getInitialProps(ctx)
-    : {}
-
-  return { pageProps }
-}
+export default MyApp;
