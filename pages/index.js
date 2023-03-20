@@ -49,7 +49,7 @@ export default function Home() {
                     Cùng MEDLATEC
                   </span>
                   <Fade direction="up">
-                    <span className="font-fz text-6xl xl:text-9xl text-gradient leading-[88px] xl:leading-[148px]">
+                    <span className="font-fz text-6xl xl:text-9xl text-gradient leading-loose">
                       Bảo Tín tình yêu
                     </span>
                   </Fade>
