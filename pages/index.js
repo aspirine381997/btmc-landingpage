@@ -9,7 +9,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import Link from "next/link";
 import Footer from "@/components/footer/footer";
-import { Fade } from "react-reveal";
+// import { Fade } from "react-reveal";
 
 export default function Home() {
   const [isSSR, setIsSSR] = useState(true);
@@ -48,29 +48,29 @@ export default function Home() {
                   <span className="font-inter font-bold text-xl xl:text-4xl text-white">
                     Cùng MEDLATEC
                   </span>
-                  <Fade bottom>
-                    <span className="font-fz text-6xl xl:text-9xl text-gradient leading-[88px] xl:leading-[148px]">
-                      Bảo Tín tình yêu
-                    </span>
-                  </Fade>
+                  {/* <Fade bottom> */}
+                  <span className="font-fz text-6xl xl:text-9xl text-gradient leading-[88px] xl:leading-[148px]">
+                    Bảo Tín tình yêu
+                  </span>
+                  {/* </Fade> */}
                 </h1>
 
-                <Fade bottom delay={200}>
-                  <h2 className="flex flex-col items-center gap-2 xl:gap-4">
-                    <span className="font-be font-semibold text-[9px] xl:text-[15px] text-center text-white uppercase">
-                      Tải app My Medlatec để nhận Quà tặng trị giá
-                    </span>
-                    <span className="font-be font-bold text-4xl xl:text-[64px] text-white">
-                      6.500.000đ
-                    </span>
-                  </h2>
-                </Fade>
+                {/* <Fade bottom delay={200}> */}
+                <h2 className="flex flex-col items-center gap-2 xl:gap-4">
+                  <span className="font-be font-semibold text-[9px] xl:text-[15px] text-center text-white uppercase">
+                    Tải app My Medlatec để nhận Quà tặng trị giá
+                  </span>
+                  <span className="font-be font-bold text-4xl xl:text-[64px] text-white">
+                    6.500.000đ
+                  </span>
+                </h2>
+                {/* </Fade> */}
 
-                <Fade bottom delay={200}>
-                  <button className="mt-4 xl:mt-6 mx-auto bg-gradient-1 py-3.5 px-[52px] rounded-full font-be font-bold text-xl text-[#0F55C9] uppercase">
-                    Tải app ngay
-                  </button>
-                </Fade>
+                {/* <Fade bottom delay={200}> */}
+                <button className="mt-4 xl:mt-6 mx-auto bg-gradient-1 py-3.5 px-[52px] rounded-full font-be font-bold text-xl text-[#0F55C9] uppercase">
+                  Tải app ngay
+                </button>
+                {/* </Fade> */}
               </div>
 
               {/* Video */}
