@@ -50,7 +50,7 @@ export default function Home() {
                   </span>
                   <Fade
                     direction="up"
-                    className="font-fz text-6xl xl:text-9xl text-gradient leading-[88px] xl:leading-[148px]"
+                    className="font-fz text-5xl xs:text-6xl xl:text-9xl text-gradient leading-[88px] xs:leading-[88px] xl:leading-[148px]"
                   >
                     <span>Bảo Tín tình yêu</span>
                   </Fade>
@@ -149,7 +149,8 @@ export default function Home() {
               effect={"coverflow"}
               grabCursor={true}
               centeredSlides={true}
-              slidesPerView={1.3}
+              slidesPerView={1.2}
+              loop={true}
               coverflowEffect={{
                 rotate: 30,
                 stretch: 0,
@@ -159,10 +160,8 @@ export default function Home() {
               }}
               navigation={true}
               modules={[EffectCoverflow, Navigation]}
-              rewind={true}
               breakpoints={{
                 0: {
-                  slidesPerView: 1.2,
                   spaceBetween: 16,
                 },
                 768: {
@@ -170,12 +169,14 @@ export default function Home() {
                   spaceBetween: 24,
                 },
                 992: {
+                  enabled: false,
                   slidesPerView: 3,
                   spaceBetween: 24,
                   effect: "slide",
                   centeredSlides: false,
                 },
                 1200: {
+                  enabled: false,
                   slidesPerView: 3,
                   spaceBetween: 98,
                   effect: "slide",
@@ -183,6 +184,70 @@ export default function Home() {
                 },
               }}
             >
+              <SwiperSlide className="">
+                <div className="flex flex-col items-center">
+                  <img
+                    alt="Mua Vàng ưu đãi lớn tại Bảo Tín Minh Châu"
+                    src="\images\index\anh landing 2 1.png"
+                  />
+
+                  <div className="mt-7 py-3 bg-[#0F55C91A] rounded-full w-full">
+                    <h3 className="max-w-[230px] xl:max-w-[248px] text-center mx-auto font-be uppercase font-bold xl:text-lg text-[#0F55C9]">
+                      Mua Vàng ưu đãi lớn tại Bảo Tín Minh Châu
+                    </h3>
+                  </div>
+
+                  <h6 className="mt-4 max-w-[280px] text-center font-be text-sm xl:text-base text-[#8989A2]">
+                    Tặng bạn Voucher{" "}
+                    <span className="font-bold">5.000.000 vnđ</span> khi mua
+                    hàng tại Bảo Tín Minh Châu
+                  </h6>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide className="">
+                <div className="flex flex-col items-center">
+                  <img
+                    alt="Khám tiền hôn nhân cho khởi đầu hạnh phúc"
+                    src="\images\index\anh landing 2 2.png"
+                  />
+
+                  <div className="mt-7 py-3 bg-[#0F55C91A] rounded-full w-full">
+                    <h3 className="max-w-[230px] xl:max-w-[280px] text-center mx-auto font-be uppercase font-bold xl:text-lg text-[#0F55C9]">
+                      Khám tiền hôn nhân cho khởi đầu hạnh phúc
+                    </h3>
+                  </div>
+
+                  <h6 className="mt-4 max-w-[280px] text-center font-be text-sm xl:text-base text-[#8989A2]">
+                    Giảm trực tiếp{" "}
+                    <span className="font-bold">150.000 vnđ </span> khi sử dụng
+                    gói khám tiền hôn nhân tại MEDLATEC
+                  </h6>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide className="">
+                <div className="flex flex-col items-center">
+                  <img
+                    alt="Nghỉ dưỡng tại Hoà Bình dành riêng cho cặp đôi"
+                    src="\images\index\anh landing 2 3.png"
+                  />
+
+                  <div className="mt-7 py-3 bg-[#0F55C91A] rounded-full w-full">
+                    <h3 className="max-w-[230px] xl:max-w-[280px] text-center mx-auto font-be uppercase font-bold xl:text-lg text-[#0F55C9]">
+                      Nghỉ dưỡng tại Hoà Bình dành riêng cho cặp đôi
+                    </h3>
+                  </div>
+
+                  <h6 className="mt-4 max-w-[280px] text-center font-be text-sm xl:text-base text-[#8989A2]">
+                    Tặng 1 phòng nghỉ + Ăn trưa trị giá{" "}
+                    <span className="font-bold">1.350.000 vnđ </span>
+                    khi đặt tour nghỉ dưỡng tại Hòa Bình dành cho cặp đôi. Thời
+                    gian check in 12h, check out 14h
+                  </h6>
+                </div>
+              </SwiperSlide>
+
               <SwiperSlide className="">
                 <div className="flex flex-col items-center">
                   <img
