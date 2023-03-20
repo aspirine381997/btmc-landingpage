@@ -10,6 +10,7 @@
 html {
   --scroll-behavior: smooth!important;
   scroll-behavior: smooth!important;
+  color-scheme: light;
   }
 
 .bg-gradient-1 {
