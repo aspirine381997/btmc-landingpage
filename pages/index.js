@@ -49,13 +49,14 @@ export default function Home({ title, description }) {
                   </span>
                   <Fade
                     direction="up"
+                    delay={1000}
                     className="font-fz text-5xl xs:text-6xl xl:text-9xl text-gradient leading-[88px] xs:leading-[88px] xl:leading-[148px]"
                   >
                     <span>Bảo Tín tình yêu</span>
                   </Fade>
                 </h1>
 
-                <Fade direction="up" delay={200}>
+                <Fade direction="up" delay={1200}>
                   <h2 className="flex flex-col items-center gap-2 xl:gap-4">
                     <span className="font-be font-semibold text-[9px] xl:text-[15px] text-center text-white uppercase">
                       Tải app My Medlatec để nhận Quà tặng trị giá
@@ -66,7 +67,7 @@ export default function Home({ title, description }) {
                   </h2>
                 </Fade>
 
-                <Fade direction="up" delay={400} className="mx-auto">
+                <Fade direction="up" delay={1400} className="mx-auto">
                   <Link href="#download">
                     <button className="mt-4 xl:mt-6 mx-auto bg-gradient-1 py-3.5 px-[52px] rounded-full font-be font-bold text-xl text-[#0F55C9] uppercase">
                       Tải app ngay
@@ -76,7 +77,7 @@ export default function Home({ title, description }) {
               </div>
 
               {/* Video */}
-              <Fade delay={600}>
+              <Fade delay={1600}>
                 <div className="xl:w-full mx-auto mt-10 rounded-2xl xl:rounded-[26px] overflow-hidden max-w-[952px] drop-shadow-[0_4px_25px_rgba(15,85,201,0.25)]">
                   <ReactPlayer
                     url="https://www.youtube.com/watch?v=QQNYv3NRguc&themeRefresh=1"
