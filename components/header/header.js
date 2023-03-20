@@ -8,10 +8,10 @@ const Header = () => {
         {/* logos */}
         <div className="py-3 xl:py-0 flex gap-6 items-center">
           <Link target="_blank" href="https://medlatec.vn/">
-            <img alt="Logo Medlatech" src="\images\header\logo.png" />
+            <img alt="Logo Medlatech" src="\images\header\logo.png" className="max-w-[67px]" />
           </Link>
           <Link target="_blank" href="https://btmc.vn/">
-            <img alt="Logo BTMC" src="\images\header\Logo-BTMC.png" />
+            <img alt="Logo BTMC" src="\images\header\Logo-BTMC.png" className="max-w-[67px]" />
           </Link>
         </div>
 
@@ -21,7 +21,7 @@ const Header = () => {
             <img
               alt="Diamond"
               src="\images\index\diamon-3.png"
-              className="pointer-events-none"
+              className="pointer-events-none max-w-[30px]"
             />
             <h4 className="font-be font-medium text-base xl:text-lg text-center text-[#9C2225]">
               Chương trình hợp tác giữa{" "}
@@ -31,7 +31,7 @@ const Header = () => {
             <img
               alt="Diamond"
               src="\images\index\diamon-3.png"
-              className="pointer-events-none"
+              className="pointer-events-none max-w-[30px]"
             />
           </div>
           <Link

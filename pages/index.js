@@ -44,7 +44,7 @@ export default function Home() {
                   <span className="font-inter font-bold text-xl xl:text-4xl text-white">
                     Cùng MEDLATEC
                   </span>
-                  <span className="font-fz text-6xl xl:text-9xl text-gradient leading-[80px] xl:leading-[148px]">
+                  <span className="font-fz text-6xl xl:text-9xl text-gradient leading-[88px] xl:leading-[148px]">
                     Bảo Tín tình yêu
                   </span>
                 </h1>
@@ -64,7 +64,7 @@ export default function Home() {
               </div>
 
               {/* Video */}
-              <div className="xl:w-full mx-auto mt-10 rounded-[26px] overflow-hidden max-w-[952px] drop-shadow-[0_4px_25px_rgba(15,85,201,0.25)]">
+              <div className="xl:w-full mx-auto mt-10 rounded-t-2xl xl:rounded-[26px] overflow-hidden max-w-[952px] drop-shadow-[0_4px_25px_rgba(15,85,201,0.25)]">
                 <ReactPlayer
                   url="https://www.youtube.com/watch?v=QQNYv3NRguc&themeRefresh=1"
                   width="100%"
@@ -100,13 +100,13 @@ export default function Home() {
                 className="hidden xl:block pointer-events-none absolute -left-40 2xl:left-0"
               />
 
-              <div className="mt-[50px] xl:mt-[88px] flex mx-auto py-1.5  px-5 xl:px-10 gap-2 xl:gap-4 items-center bg-[#0F55C91A] rounded-full">
+              <div className="mt-[50px] xl:mt-[88px] flex mx-auto py-1.5  px-5 xl:px-10 gap-1.5 xs:gap-2 xl:gap-4 items-center bg-[#0F55C91A] rounded-full">
                 <img
                   alt="Diamond"
                   src="\images\index\diamond-2.png"
                   className="max-w-[28px] xl:max-w-[52px]"
                 />
-                <h2 className="font-be font-bold uppercase text-[#0F55C9] text-lg xl:text-[32px] text-center">
+                <h2 className="font-be font-bold uppercase text-[#0F55C9] text-sm xs:text-lg xl:text-[32px] text-center">
                   Tải app my medlatec
                 </h2>
                 <img
@@ -130,7 +130,8 @@ export default function Home() {
           {/* Feature */}
           <div className="container mt-8 mb-8 xl:mb-20">
             <Swiper
-            className="z-0"
+              className="z-0"
+              loop={true}
               breakpoints={{
                 0: {
                   slidesPerView: 1.2,
@@ -262,13 +263,13 @@ export default function Home() {
                   </div>
 
                   {/* step 2 */}
-                  <div className="mt-5 xl:mt-0 flex flex-col-reverse xl:flex-row items-center xl:gap-16">
+                  <div className="mt-5 xl:mt-0 flex flex-col-reverse xl:flex-row items-center xl:gap-12">
                     <div className="xl:w-1/2">
                       <h3 className="mt-5 xl:mt-0 font-be font-bold text-[#272D4E] xl:text-2xl xl:text-right">
                         NHẬN MÃ ƯU ĐÃI
                       </h3>
 
-                      <div className="mt-2 xl:mt-5 font-be text-sm xl:text-lg text-[#94A2B3] xl:text-right">
+                      <div className="mt-2 xl:mt-5 font-be text-sm xl:text-lg 2xl:w-[540px] text-[#94A2B3] xl:text-right">
                         Mã ưu đãi được gửi về tài khoản ngay khi hoàn thành đăng
                         ký. Bạn có thể kiểm tra và lưu mã tại mục Thông báo trên
                         app.
