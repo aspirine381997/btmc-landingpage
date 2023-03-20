@@ -16,7 +16,7 @@ const Header = () => {
         </div>
 
         {/* infor */}
-        <div className="flex items-center gap-4 w-full lg:w-auto">
+        <div className="flex items-center lg:gap-4 w-full lg:w-auto">
           <div className="flex items-center xl:gap-2 py-2 px-4 lg:rounded-full bg-gradient-1 w-full lg:w-auto justify-center">
             <img
               alt="Diamond"

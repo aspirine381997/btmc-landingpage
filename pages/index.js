@@ -130,6 +130,7 @@ export default function Home() {
           {/* Feature */}
           <div className="container mt-8 mb-8 xl:mb-20">
             <Swiper
+            className="z-0"
               breakpoints={{
                 0: {
                   slidesPerView: 1.2,

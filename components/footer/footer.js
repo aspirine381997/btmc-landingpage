@@ -9,7 +9,7 @@ const Footer = () => {
       </div>
 
       {/* Download on mobile */}
-      <div className="fixed bottom-0 w-full py-3.5 bg-white drop-shadow-[0_4px_25px_rgba(15,85,201,0.25)] xl:hidden">
+      <div className="fixed z-50 bottom-0 w-full py-3.5 bg-white drop-shadow-[0_4px_25px_rgba(15,85,201,0.25)] xl:hidden">
         <div className="container flex items-center place-content-between">
           <div className="flex flex-col items-center gap-1">
             <div className="font-be font-medium uppercase text-[10px]">
