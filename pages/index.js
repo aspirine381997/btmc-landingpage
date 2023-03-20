@@ -68,9 +68,11 @@ export default function Home() {
                 </Fade>
 
                 <Fade direction="up" delay={400} className="mx-auto">
-                  <button className="mt-4 xl:mt-6 mx-auto bg-gradient-1 py-3.5 px-[52px] rounded-full font-be font-bold text-xl text-[#0F55C9] uppercase">
-                    Tải app ngay
-                  </button>
+                  <Link href="#download">
+                    <button className="mt-4 xl:mt-6 mx-auto bg-gradient-1 py-3.5 px-[52px] rounded-full font-be font-bold text-xl text-[#0F55C9] uppercase">
+                      Tải app ngay
+                    </button>
+                  </Link>
                 </Fade>
               </div>
 
@@ -339,7 +341,10 @@ export default function Home() {
           </div>
 
           {/* My Medlatec */}
-          <div className="container xl:flex py-10 xl:py-20 items-center">
+          <div
+            id="download"
+            className="container xl:flex py-10 xl:py-20 items-center"
+          >
             <img
               alt="My Medlatech"
               src="\images\index\my-medlatec.png"
