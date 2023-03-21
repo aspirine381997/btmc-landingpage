@@ -6,7 +6,7 @@ const Header = () => {
     <div className="bg-white drop-shadow-[0_4px_25px_rgba(15,85,201,0.25)]">
       <div className="lg:container xl:py-3.5 flex flex-col-reverse lg:flex-row place-content-between items-center ">
         {/* logos */}
-        <div className="py-3 xl:py-0 flex gap-6 items-center">
+        <div className="py-3 xl:py-0 grid grid-cols-2 gap-6 items-center">
           <Link target="_blank" href="https://medlatec.vn/">
             <img alt="Logo Medlatech" src="\images\header\logo.png" className="max-w-[67px]" />
           </Link>

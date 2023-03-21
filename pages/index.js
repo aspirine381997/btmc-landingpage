@@ -360,7 +360,8 @@ export default function Home({ title, description }) {
                         <div className="flex">
                           <li></li>
                           <div className="font-be text-sm xl:text-lg ">
-                            Nhập thông tin cá nhân và hoàn tất đăng ký.
+                            Nhập thông tin cá nhân + mã giới thiệu “BTMC” và
+                            hoàn tất đăng ký
                           </div>
                         </div>
                       </ul>
