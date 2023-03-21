@@ -3,10 +3,11 @@ import Header from "@/components/header/header";
 import ReactPlayer from "react-player";
 import { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide, isActive } from "swiper/react";
-import { EffectCoverflow, Navigation } from "swiper";
+import { EffectCoverflow, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import Link from "next/link";
 import Footer from "@/components/footer/footer";
 import { Fade } from "react-awesome-reveal";
@@ -50,7 +51,7 @@ export default function Home({ title, description }) {
                   <Fade
                     direction="up"
                     delay={1000}
-                    className="font-fz text-5xl xs:text-6xl xl:text-9xl text-gradient leading-[88px] xs:leading-[88px] xl:leading-[148px]"
+                    className="font-fz text-5xl xs:text-6xl xl:text-9xl text-gradient"
                   >
                     <span>Bảo Tín tình yêu</span>
                   </Fade>
@@ -80,7 +81,7 @@ export default function Home({ title, description }) {
               <Fade delay={1600}>
                 <div className="xl:w-full mx-auto mt-10 rounded-2xl xl:rounded-[26px] overflow-hidden max-w-[952px] drop-shadow-[0_4px_25px_rgba(15,85,201,0.25)]">
                   <ReactPlayer
-                    url="https://www.youtube.com/watch?v=QQNYv3NRguc&themeRefresh=1"
+                    url="https://www.youtube.com/watch?v=vooJm1vkvy4"
                     width="100%"
                     height="540px"
                     className="hidden xl:block"
@@ -88,7 +89,7 @@ export default function Home({ title, description }) {
 
                   {/* on mobile */}
                   <ReactPlayer
-                    url="https://www.youtube.com/watch?v=QQNYv3NRguc&themeRefresh=1"
+                    url="https://www.youtube.com/watch?v=vooJm1vkvy4"
                     width="100%"
                     height="200px"
                     className="md:hidden"
@@ -96,7 +97,7 @@ export default function Home({ title, description }) {
 
                   {/* on tablet */}
                   <ReactPlayer
-                    url="https://www.youtube.com/watch?v=QQNYv3NRguc&themeRefresh=1"
+                    url="https://www.youtube.com/watch?v=vooJm1vkvy4"
                     width="100%"
                     height="400px"
                     className="hidden md:block xl:hidden"
@@ -146,10 +147,13 @@ export default function Home({ title, description }) {
           <div className="container mt-8 mb-8 xl:mb-20">
             <Swiper
               className="z-0"
+              visibleSlides={3}
+              autoHeight={true}
               effect={"coverflow"}
               grabCursor={true}
               centeredSlides={true}
               slidesPerView={1.2}
+              slidesPerGroup={2}
               loop={true}
               coverflowEffect={{
                 rotate: 30,
@@ -159,13 +163,15 @@ export default function Home({ title, description }) {
                 slideShadows: false,
               }}
               navigation={true}
-              modules={[EffectCoverflow, Navigation]}
+              pagination={true}
+              modules={[EffectCoverflow, Navigation, Pagination]}
               breakpoints={{
                 0: {
                   spaceBetween: 16,
                 },
                 768: {
                   slidesPerView: 2.2,
+                  slidesPerGroup: 1,
                   spaceBetween: 24,
                 },
                 992: {
@@ -174,6 +180,7 @@ export default function Home({ title, description }) {
                   spaceBetween: 24,
                   effect: "slide",
                   centeredSlides: false,
+                  pagination: false,
                 },
                 1200: {
                   enabled: false,
@@ -181,6 +188,7 @@ export default function Home({ title, description }) {
                   spaceBetween: 98,
                   effect: "slide",
                   centeredSlides: false,
+                  pagination: false,
                 },
               }}
             >

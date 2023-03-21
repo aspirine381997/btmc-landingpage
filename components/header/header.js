@@ -36,7 +36,7 @@ const Header = () => {
           </div>
           <Link
             target="_blank"
-            href="https://www.facebook.com/BenhVienDaKhoaMedlatec/?locale=vi_VN"
+            href="https://www.facebook.com/mymedlatec.vn?locale=vi_VN"
           >
             <div className="w-11 h-11 bg-gradient-2 rounded-full hidden lg:flex items-center justify-center">
               <img
