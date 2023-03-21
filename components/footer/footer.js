@@ -15,11 +15,11 @@ const Footer = () => {
             <div className="font-be font-medium uppercase text-[10px]">
               Tải app ngay
             </div>
-            <div className="px-2 w-full xl:w-auto xl:px-14 rounded-full border border-black flex items-center justify-center gap-4">
+            <div className="px-2 w-full xl:w-auto xl:px-14 rounded-full border border-black flex items-center justify-center">
               <img
                 alt="Search"
                 src="\images\index\search.png"
-                className="w-2 pointer-events-none"
+                className="w-2 pointer-events-none mr-4"
               />
               <div className="font-be font-medium text-[10px] uppercase">
                 My medlatec
@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-row items-center gap-1.5">
+          <div className="grid grid-cols-2 items-center gap-1.5">
             <Link
               target="_blank"
               href="https://apps.apple.com/vn/app/my-medlatec/id1628288322?l=vi"

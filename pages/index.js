@@ -441,7 +441,7 @@ export default function Home({ title, description }) {
               />
 
               <div className="mt-7 xl:mt-8 grid md:grid-cols-2 gap-6 2xl:gap-x-20 2xl:gap-y-5">
-                <div className="flex items-center gap-4">
+                <div className="grid grid-flow-col items-center justify-start gap-4">
                   <img
                     alt="Icon Medlatec"
                     src="\images\index\icon-medlatec.png"
@@ -452,7 +452,7 @@ export default function Home({ title, description }) {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4">
+                <div className="grid grid-flow-col items-center justify-start gap-4">
                   <img
                     alt="Icon Medlatec"
                     src="\images\index\icon-medlatec.png"
@@ -463,7 +463,7 @@ export default function Home({ title, description }) {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4">
+                <div className="grid grid-flow-col items-center justify-start gap-4">
                   <img
                     alt="Icon Medlatec"
                     src="\images\index\icon-medlatec.png"
@@ -474,7 +474,7 @@ export default function Home({ title, description }) {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4">
+                <div className="grid grid-flow-col items-center justify-start gap-4">
                   <img
                     alt="Icon Medlatec"
                     src="\images\index\icon-medlatec.png"
@@ -485,7 +485,7 @@ export default function Home({ title, description }) {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4">
+                <div className="grid grid-flow-col items-center justify-start gap-4">
                   <img
                     alt="Icon Medlatec"
                     src="\images\index\icon-medlatec.png"
@@ -496,7 +496,7 @@ export default function Home({ title, description }) {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4">
+                <div className="grid grid-flow-col items-center justify-start gap-4">
                   <img
                     alt="Icon Medlatec"
                     src="\images\index\icon-medlatec.png"
@@ -507,7 +507,7 @@ export default function Home({ title, description }) {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4">
+                <div className="grid grid-flow-col items-center justify-start gap-4">
                   <img
                     alt="Icon Medlatec"
                     src="\images\index\icon-medlatec.png"
@@ -518,7 +518,7 @@ export default function Home({ title, description }) {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4">
+                <div className="grid grid-flow-col items-center justify-start gap-4">
                   <img
                     alt="Icon Medlatec"
                     src="\images\index\icon-medlatec.png"
@@ -536,7 +536,7 @@ export default function Home({ title, description }) {
                   tải app trên app store hoặc google play
                 </h3>
 
-                <div className="mt-5 xl:mt-6 py-3 w-full xl:w-auto xl:px-14 rounded-full border border-black flex items-center justify-center gap-4">
+                <div className="mt-5 xl:mt-6 py-3 w-full xl:w-auto xl:px-14 rounded-full border border-black grid grid-flow-col items-center justify-center gap-4">
                   <img
                     alt="Search"
                     src="\images\index\search.png"
@@ -547,7 +547,7 @@ export default function Home({ title, description }) {
                   </div>
                 </div>
 
-                <div className="mt-6 flex flex-col md:flex-row items-center gap-6">
+                <div className="mt-6 grid grid-flow-row md:grid-flow-col items-center gap-6">
                   <Link
                     target="_blank"
                     href="https://apps.apple.com/vn/app/my-medlatec/id1628288322?l=vi"
